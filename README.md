@@ -12,9 +12,9 @@ Por exemplo:
 
 ```bash
 # Copia o pre-commit.rb do repositório para a pasta de hooks do git
-$ ln -s hooks/pre-commit.rb .git/hooks/pre-commit
+$ cp -s hooks/commit-msg.rb .git/hooks/commit-msg
 # Garante que o arquivo é executável
-$ chmod +x .git/hooks/pre-commit
+$ chmod +x .git/hooks/commit-msg
 ```
 
 ## Licença
