@@ -19,10 +19,10 @@ if $regex.match message
     exit 0 if number.include? issue['number'].to_s
   end
 
-  puts "[POLICY] BAD FORMATED MESSAGE – ISSUE NUMBER DOES NOT EXIST"
+  puts "[POLICY] BAD FORMATTED MESSAGE: ISSUE NUMBER DOES NOT EXIST"
   exit 1
 
 else
-  puts "[POLICY] BAD FORMATTED MESSAGE – NEEDS TO REFERENCE AN ISSUE"
+  puts "[POLICY] BAD FORMATTED MESSAGE: NEEDS TO REFERENCE AN ISSUE"
   exit 1
 end
