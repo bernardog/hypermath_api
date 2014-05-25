@@ -4,7 +4,7 @@ class CreateOperations < ActiveRecord::Migration
       t.float :x
       t.float :y
       t.float :result
-      t.integer :type
+      t.integer :which
 
       t.timestamps
     end

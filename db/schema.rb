@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 20140525205602) do
     t.float    "x"
     t.float    "y"
     t.float    "result"
-    t.integer  "type"
+    t.integer  "which"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
