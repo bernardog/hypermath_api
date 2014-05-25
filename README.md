@@ -1,4 +1,4 @@
-# HyperMath API
+# HyperMath API [![wercker status](https://app.wercker.com/status/346efa44e8a5321b36efee3be8ab52bd/s "wercker status")](https://app.wercker.com/project/bykey/346efa44e8a5321b36efee3be8ab52bd)
 
 HyperMath,apesar do nome, é uma calculadora estupidamente simples e serve de apenas como projeto de exemplo para demonstração de um desenvolvimento de ambiente de gerência de configuração e mudança, utilizando *hooks* e *policies*, integração contínua e outras práticas.
 
