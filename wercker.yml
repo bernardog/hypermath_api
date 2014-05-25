@@ -1,3 +1,4 @@
+box: wercker/rvm
 # services:
 #   - wercker/postgresql
 # See more about services on our devcenter:
