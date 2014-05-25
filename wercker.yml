@@ -24,6 +24,10 @@ build:
                 echo "from location $(which ruby)"
                 echo -p "gem list: $(gem list)"
 
+        - script:
+            name: tests
+            code: rake
+
         # Add more steps here:
         # - script:
         #        name: rspec
