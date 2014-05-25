@@ -1,12 +1,12 @@
 class Operation < ActiveRecord::Base
   enum which: [:addition, :subtraction, :multiplication, :division]
 
-  def operate
+  def operate!
     self.result =
     case which
     when "addition"
       x + y
-    when "substraction"
+    when "subtraction"
       x - y
     when "multiplication"
       x * y
