@@ -28,6 +28,8 @@ build:
             name: tests
             code: bundle exec rake
 
+    after-steps:
+      
         - hijonathan/git-tag@0.2.5
 
         # Add more steps here:
