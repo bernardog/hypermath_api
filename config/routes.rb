@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
-  post 'operations/new' => 'operations#add'
+  post 'operations/addition' => 'operations#add'
+  post 'operations/subtract' => 'operations#subtract'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
