@@ -1,8 +1,38 @@
-# HyperMath API [![wercker status](https://app.wercker.com/status/346efa44e8a5321b36efee3be8ab52bd/s "wercker status")](https://app.wercker.com/project/bykey/346efa44e8a5321b36efee3be8ab52bd) [![Code Climate](https://codeclimate.com/github/bernardog/hypermath_api.png)](https://codeclimate.com/github/bernardog/hypermath_api) [![Code Climate](https://codeclimate.com/github/bernardog/hypermath_api/coverage.png)](https://codeclimate.com/github/bernardog/hypermath_api) 
+# HyperMath API [![wercker status](https://app.wercker.com/status/346efa44e8a5321b36efee3be8ab52bd/s "wercker status")](https://app.wercker.com/project/bykey/346efa44e8a5321b36efee3be8ab52bd) [![Code Climate](https://codeclimate.com/github/bernardog/hypermath_api.png)](https://codeclimate.com/github/bernardog/hypermath_api) [![Code Climate](https://codeclimate.com/github/bernardog/hypermath_api/coverage.png)](https://codeclimate.com/github/bernardog/hypermath_api)
 
 HyperMath,apesar do nome, é uma calculadora estupidamente simples e serve de apenas como projeto de exemplo para demonstração de um desenvolvimento de ambiente de gerência de configuração e mudança, utilizando *hooks* e *policies*, integração contínua e outras práticas.
 
 O projeto se encontra devidido em dois, sendo uma API e uma interface web que a consome. Este projeto é a API, ela foi desenvolvida utilizando o framework para web Rails, utilizando a linguagem Ruby.
+
+## 1. Usando a API
+
+A API fornece as seguintes funcionalidades: adição, subtração, divisão e multiplicação entre dois números.
+
+Estas funcionalidades podem ser acessadas pelas rotas:
+
+### 1.1 Soma/Adição
+```bash
+# Exemplo de parâmetro JSON: {operations: {x: 6, y: 2 }} => Objeto com resultado 8
+POST /operations/addition
+```
+
+### 1.2 Subtração
+```bash
+# Exemplo de parâmetro JSON: {operations: {x: 6, y: 2 }} => Objeto com resultado 4
+POST /operations/subtract
+```
+
+### 1.3 Multiplicação
+```bash
+# Exemplo de parâmetro JSON: {operations: {x: 6, y: 2 }} => Objeto com resultado 12
+POST /operations/multiply
+```
+
+### 1.3 Divisão
+```bash
+# Exemplo de parâmetro JSON: {operations: {x: 6, y: 2 }} => Objeto com resultado 3
+POST /operations/divide
+```
 
 ## Instalação de hooks
 
