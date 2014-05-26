@@ -1,25 +1,33 @@
 require 'test_helper'
 
 class OperationTest < ActiveSupport::TestCase
-  
-  test "two plus three should be five" do
-    operations(:addition).operate!
-    assert_equal 5, operations(:addition).result
+
+  def setup
+    @op = operations(:one)
   end
 
-  test "two minus three should be minus one" do
-    operations(:substraction).operate!
-    assert_equal -1, operations(:substraction).result
+  def teardown
+    @op = nil
   end
 
-  test "two times three should be six" do
-    operations(:multiplication).operate!
-    assert_equal 6, operations(:multiplication).result
+  test "six plus two should be eight" do
+    @op.addition!
+    assert_equal 8, @op.operate!
+  end
+
+  test "six minus two should be minus four" do
+    @op.subtraction!
+    assert_equal 4, @op.operate!
+  end
+
+  test "six times two should be twelve" do
+    @op.multiplication!
+    assert_equal 12, @op.operate!
   end
 
   test "six divide by two should be three" do
-    operations(:division).operate!
-    assert_equal 3, operations(:division).result
+    @op.division!
+    assert_equal 3, @op.operate!
   end
 
 end

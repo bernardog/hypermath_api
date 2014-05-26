@@ -1,9 +1,11 @@
 ENV['RAILS_ENV'] ||= 'test'
+require 'codeclimate-test-reporter'
+require 'simplecov'
 require File.expand_path('../../config/environment', __FILE__)
 require 'rails/test_help'
-require "codeclimate-test-reporter"
 
-CodeClimate::TestReporter.start
+SimpleCov.start 'rails'
+# CodeClimate::TestReporter.start
 
 class ActiveSupport::TestCase
   # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.

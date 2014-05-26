@@ -14,6 +14,7 @@ class Operation < ActiveRecord::Base
       x / y
     end
     self.save
+    result
   end
 
 end

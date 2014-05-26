@@ -1,21 +1,5 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-addition:
-  x: 2
-  y: 3
-  which: 0
-
-substraction:
-  x: 2
-  y: 3
-  which: 1
-
-multiplication:
-  x: 2
-  y: 3
-  which: 2
-
-division:
+one:
   x: 6
   y: 2
-  which: 3
