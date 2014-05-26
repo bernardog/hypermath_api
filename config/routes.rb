@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   post 'operations/addition' => 'operations#add'
   post 'operations/subtract' => 'operations#subtract'
+  post 'operations/multiply' => 'operations#multiply'
   post 'operations/divide' => 'operations#divide'
 
   # The priority is based upon order of creation: first created -> highest priority.

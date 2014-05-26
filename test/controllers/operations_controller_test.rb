@@ -12,6 +12,11 @@ class OperationsControllerTest < ActionController::TestCase
     assert_equal 4, Operation.last.result
   end
 
+  test "should post a new multiplication operation" do
+    post :multiply, operation: { x: '6', y: '2' }
+    assert_equal 12, Operation.last.result
+  end
+
   test "should post a new division operation" do
     post :divide, operation: { x: '6', y: '2' }
     assert_equal 3, Operation.last.result
