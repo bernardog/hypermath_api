@@ -5,7 +5,7 @@ class OperationsController < ApplicationController
     @operation.addition!
     @operation.operate!
     @operation.save
-    render nothing: true
+    render json: @operation
   end
 
   def subtract
@@ -13,7 +13,7 @@ class OperationsController < ApplicationController
     @operation.subtraction!
     @operation.operate!
     @operation.save
-    render nothing: true
+    render json: @operation
   end
 
   def multiply
@@ -21,7 +21,7 @@ class OperationsController < ApplicationController
     @operation.multiplication!
     @operation.operate!
     @operation.save
-    render nothing: true
+    render json: @operation
   end
 
   def divide
@@ -29,13 +29,13 @@ class OperationsController < ApplicationController
     @operation.division!
     @operation.operate!
     @operation.save
-    render nothing: true
+    render json: @operation
   end
 
   private
 
   def operation_params
-    params.require(:operation).permit!
+    params.require(:operation).permit(:x, :y)
   end
 
 end
