@@ -16,6 +16,14 @@ class OperationsController < ApplicationController
     render nothing: true
   end
 
+  def divide
+    @operation = Operation.new(operation_params)
+    @operation.division!
+    @operation.operate!
+    @operation.save
+    render nothing: true
+  end
+
   private
 
   def operation_params
