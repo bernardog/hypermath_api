@@ -14,9 +14,12 @@ end
 if $regex.match message
 
   number = message[/#(\d+)/]
+  number = number[/(\d+)/]
 
   get_issues.each do |issue|
-    exit 0 if number.include? issue['number'].to_s
+    # puts "NUMBER = #{number}"
+    # puts "ISSUE NUMBER = #{issue['number']}"
+    exit 0 if number == issue['number'].to_s
   end
 
   puts "[POLICY] BAD FORMATTED MESSAGE: ISSUE NUMBER DOES NOT EXIST"
