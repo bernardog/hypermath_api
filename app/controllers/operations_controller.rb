@@ -4,7 +4,6 @@ class OperationsController < ApplicationController
     @operation = Operation.new(operation_params)
     @operation.addition!
     @operation.operate!
-    @operation.save
     render json: @operation
   end
 
@@ -12,7 +11,6 @@ class OperationsController < ApplicationController
     @operation = Operation.new(operation_params)
     @operation.subtraction!
     @operation.operate!
-    @operation.save
     render json: @operation
   end
 
@@ -20,7 +18,6 @@ class OperationsController < ApplicationController
     @operation = Operation.new(operation_params)
     @operation.multiplication!
     @operation.operate!
-    @operation.save
     render json: @operation
   end
 
@@ -28,7 +25,6 @@ class OperationsController < ApplicationController
     @operation = Operation.new(operation_params)
     @operation.division!
     @operation.operate!
-    @operation.save
     render json: @operation
   end
 
