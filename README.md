@@ -4,25 +4,29 @@ HyperMath,apesar do nome, é uma calculadora estupidamente simples e serve de ap
 
 O projeto se encontra devidido em dois, sendo uma API e uma interface web que a consome. Este projeto é a API, ela foi desenvolvida utilizando o framework para web Rails, utilizando a linguagem Ruby.
 
-## 1. Usando a API
+# API Online
+
+Esta API se encontra hospedada no endereço http://http://hypermath.heroku-app.com/. 
+
+## 2. Usando a API
 
 A API fornece as seguintes funcionalidades: adição, subtração, divisão e multiplicação entre dois números.
 
 Estas funcionalidades podem ser acessadas pelas rotas:
 
-### 1.1 Soma/Adição
+### 2.1 Soma/Adição
 ```bash
 # Exemplo de parâmetro JSON: {operations: {x: 6, y: 2 }} => Objeto com resultado 8
 POST /operations/addition
 ```
 
-### 1.2 Subtração
+### 2.2 Subtração
 ```bash
 # Exemplo de parâmetro JSON: {operations: {x: 6, y: 2 }} => Objeto com resultado 4
 POST /operations/subtract
 ```
 
-### 1.3 Multiplicação
+### 2.3 Multiplicação
 ```bash
 # Exemplo de parâmetro JSON: {operations: {x: 6, y: 2 }} => Objeto com resultado 12
 POST /operations/multiply
@@ -34,7 +38,7 @@ POST /operations/multiply
 POST /operations/divide
 ```
 
-## Instalação de hooks
+## 3. Instalação de hooks
 
 Como os hooks no git se encontram na pasta `.git`, eles não são distribuídos ao longo dos outros repositórios. Para isto, foi criado uma pasta `/hooks`, que contém os hooks utilizados neste projeto. Para instalar no seu repositório é simples, basta copiar os arquivos encontrados neste diretório no diretório `.git/hooks`, retirando a sua extensão e o tornando executável.
 
