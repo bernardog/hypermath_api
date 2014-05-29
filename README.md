@@ -4,7 +4,7 @@ HyperMath,apesar do nome, é uma calculadora estupidamente simples e serve de ap
 
 O projeto se encontra devidido em dois, sendo uma API e uma interface web que a consome. Este projeto é a API, ela foi desenvolvida utilizando o framework para web Rails, utilizando a linguagem Ruby.
 
-# API Online
+## 1. API Online
 
 Esta API se encontra hospedada no endereço http://http://hypermath.heroku-app.com/. 
 
