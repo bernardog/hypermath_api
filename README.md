@@ -6,7 +6,7 @@ O projeto se encontra devidido em dois, sendo uma API e uma interface web que a 
 
 ## 1. API Online
 
-Esta API se encontra hospedada no endereço http://http://hypermath.heroku-app.com/. 
+Esta API se encontra hospedada no endereço http://http://hypermath.heroku-app.com/.
 
 ## 2. Usando a API
 
@@ -50,6 +50,12 @@ $ cp -s hooks/commit-msg.rb .git/hooks/commit-msg
 # Garante que o arquivo é executável
 $ chmod +x .git/hooks/commit-msg
 ```
+
+# 3. Integração Contínua
+
+Está sendo utilizado o serviço em web Wercker para gerenciar builds automaticamente.
+
+https://app.wercker.com/#applications/5382519f1ccb14924b00f587
 
 ## Licença
 
