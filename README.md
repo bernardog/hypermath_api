@@ -53,7 +53,7 @@ $ chmod +x .git/hooks/commit-msg
 
 # 3. Integração Contínua
 
-Está sendo utilizado o serviço em web Wercker para gerenciar builds automaticamente.
+Está sendo utilizado o serviço em web [Wercker](https://app.wercker.com/) para gerenciar builds automaticamente.
 
 https://app.wercker.com/#applications/5382519f1ccb14924b00f587
 
