@@ -29,8 +29,15 @@ build:
             code: bundle exec rake
 
     after-steps:
-      
+
         - hijonathan/git-tag@0.2.5
+
+        - mies/email-notify:
+            from: hypermathapi@gmail.com
+            to: bernardogfilho@gmail.com
+            username: hypermathapi
+            password: hypermath123
+            host: smtp.gmail.com:587
 
         # Add more steps here:
         # - script:
