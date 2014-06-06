@@ -2,7 +2,7 @@ class OperationsController < ApplicationController
 
   def add
     @operation = Operation.new(operation_params)
-    @operation.addition!
+    @operation.subtract!
     @operation.operate!
     render json: @operation
   end
